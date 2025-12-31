@@ -38,6 +38,30 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Combos_1 {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <25 26>;
+        };
+
+        Combos_2 {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <21 22>;
+        };
+
+        Combos_3 {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <16 15>;
+        };
+
+        Combos_4 {
+            bindings = <&kp QUESTION>;
+            key-positions = <19 20>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
