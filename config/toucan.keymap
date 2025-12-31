@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -26,7 +27,6 @@
 #define JP_KANA         LANGUAGE_1        // かな
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
-
 #define BASE 0
 #define NAV  1
 #define SYM  2
@@ -67,7 +67,7 @@
         compatible = "zmk,combos";
 
         Combos_1 {
-            bindings = <&kp AT_SIGN>;
+            bindings = <&kp AT>;
             key-positions = <25 26>;
         };
 
@@ -107,7 +107,7 @@
         sym {
             display-name = "SYM";
             bindings = <
-&kp TAB  &kp EXCL  &kp AT_SIGN  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPERSAND  &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC  &kp LCTRL  &trans  &trans  &trans  &trans  &trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE  &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &kp UNDERSCORE  &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE  &kp LGUI  &trans  &kp SPACE  &kp RET  &trans  &kp RALT
+&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPERSAND  &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC  &kp LCTRL  &trans  &trans  &trans  &trans  &trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE  &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &kp UNDERSCORE  &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE  &kp LGUI  &trans  &kp SPACE  &kp RET  &trans  &kp RALT
             >;
         };
 
