@@ -85,6 +85,11 @@
             bindings = <&kp QUESTION>;
             key-positions = <19 20>;
         };
+
+        Combos_5 {
+            bindings = <&kp MINUS>;
+            key-positions = <22 23>;
+        };
     };
 
     keymap {
